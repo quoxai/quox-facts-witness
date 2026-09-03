@@ -1,0 +1,179 @@
+{
+  "canary_version": 1,
+  "chain_id": "ward:quox.ai/ops-canary",
+  "day": 0,
+  "date": "2026-09-03",
+  "day_zero": "2026-09-03",
+  "instance": "Quox development instance dev-1 (production canary pending owner sign-off, stated per the honesty rule rather than hidden)",
+  "started_reason": "Benchmark round-5 (2026-09-03) unanimous verdict-mover: pre-committed longitudinal operational evidence, failures included. Report: quox-strategy benchmark-round5-2026-09-03 (summarised in this repo README).",
+  "collector": {
+    "http": 200,
+    "healthy": true
+  },
+  "containers": [
+    {
+      "name": "quox-collector",
+      "status": "Up 8 minutes (healthy)",
+      "started_at": "2026-09-03T09:38:51.886634359Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-tasks",
+      "status": "Up 2 hours (healthy)",
+      "started_at": "2026-09-03T07:35:56.123377928Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-dashboard",
+      "status": "Up 4 hours (healthy)",
+      "started_at": "2026-09-03T05:52:50.571505735Z",
+      "restart_count": 1,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-quoxflow",
+      "status": "Up 6 hours (healthy)",
+      "started_at": "2026-09-03T03:29:33.096404907Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-auth",
+      "status": "Up 13 hours (healthy)",
+      "started_at": "2026-09-02T20:51:29.147401983Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-screencap",
+      "status": "Up 2 days (healthy)",
+      "started_at": "2026-08-31T18:57:27.832974219Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-brain",
+      "status": "Up 15 hours (healthy)",
+      "started_at": "2026-09-02T18:37:37.800448127Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-qlarity",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-31T00:22:52.185548055Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-quoxplan",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.732748782Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-memory",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:36.510883293Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-discord-bridge",
+      "status": "Exited (0) 2 weeks ago",
+      "started_at": "2026-08-18T17:44:44.110107886Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-appservice",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:36.24807009Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-quoxsignal",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.714319498Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-qdrant",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:36.084790213Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-slack-bridge",
+      "status": "Up 3 days",
+      "started_at": "2026-08-30T20:02:36.4236538Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-synapse",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.854871566Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-telegram-bridge",
+      "status": "Up 3 days",
+      "started_at": "2026-08-30T20:03:00.450000585Z",
+      "restart_count": 1,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-postgres",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.774065804Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-powers-host",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.814607164Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-files",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:36.339796628Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-postgres",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:36.48575681Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-orchestrator",
+      "status": "Up 3 days (healthy)",
+      "started_at": "2026-08-30T20:02:35.727540651Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    }
+  ],
+  "volt_stats_demo_org": {
+    "runs": 0,
+    "events": 0,
+    "bundles": 0
+  },
+  "facts_chain_head": {
+    "seq": 9,
+    "chain_hash": "6f3a6e54b78ab91f6308d1edab574f145995d9847b2b83a1378399b9f659a172"
+  },
+  "incidents": "none recorded for this date (manual incident notes land in ops-canary/incidents/<date>.md; automated restart detection above is independent of this field)"
+}
