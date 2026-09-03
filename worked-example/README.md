@@ -32,12 +32,20 @@ and the denial. Every envelope carries `corr`, `ts`, `from`, `to` and
   externally witnessed trust root, see the parent directory of this repo:
   every quox.ai/facts.json chain tip is countersigned by an RFC-3161
   timestamp from freetsa.org and mirrored in this append-only history.
-- STATED GAP: this bundle's `volt` and `ward` sections are empty. The
-  worked-example attempt itself exposed that the VOLT capture pipeline on
-  the instance had never produced a run (volt/stats read 0/0/0); that is
-  filed as a product issue and this README will be updated when a
-  VOLT-populated, WARD-witnessed bundle replaces this one. Stating that
-  plainly beats pretending otherwise.
+- CLOSED GAP (was stated here in v1, fixed within hours): v1's bundle had
+  empty `volt` and `ward` sections because the attempt itself exposed three
+  real product defects, each now fixed on main with tests: the VOLT capture
+  pipeline had never produced a run on the live instance (quox#510, server-
+  side capture built), approval deny/resume decisions were emitted under an
+  orphaned correlation id so denied runs were invisible in the trail
+  (quox#513), and failed runs never auto-bundled or got WARD-witnessed at
+  all (quox#514). This v2 bundle carries the populated VOLT hash chain (18
+  events) and the WARD receipt for a run that was HELD and DENIED, which is
+  exactly the record an auditor needs most.
+- Remaining honest notes: the deny decision was recorded via the documented
+  approvals API under the same demo identity (the inbox UI path is being
+  hardened separately); and the instance has a second, older run recorder
+  pending consolidation (quox#512), so run listings can show sibling rows.
 
 Provenance note: the demo identities inside (`demo-we-*@quox.local`,
 `Worked Example Org`) are throwaway accounts created for this example.
