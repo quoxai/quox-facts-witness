@@ -42,6 +42,15 @@ and the denial. Every envelope carries `corr`, `ts`, `from`, `to` and
   all (quox#514). This v2 bundle carries the populated VOLT hash chain (18
   events) and the WARD receipt for a run that was HELD and DENIED, which is
   exactly the record an auditor needs most.
+- Receipt signature note (added after benchmark round 3 caught it): the
+  per-run WARD receipt in this bundle shows `witnessed: true` with
+  `sig: null`. On this deployment, signatures live at chain-TIP level
+  (tips are Ed25519-signed and RFC-3161 timestamp-published), not per
+  entry, so the null is a receipt-shape problem rather than an unsigned
+  witness; making the receipt carry its covering signed-tip context is
+  filed as quoxai/quox#515. Until that ships, treat this receipt as
+  proof of hash-chain inclusion, and the platform-facts trust root in
+  this repo's parent directory as the countersigned anchor.
 - Remaining honest notes: the deny decision was recorded via the documented
   approvals API under the same demo identity (the inbox UI path is being
   hardened separately); and the instance has a second, older run recorder
