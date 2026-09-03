@@ -13,7 +13,7 @@
   "containers": [
     {
       "name": "quox-collector",
-      "status": "Up 8 minutes (healthy)",
+      "status": "Up 13 minutes (healthy)",
       "started_at": "2026-09-03T09:38:51.886634359Z",
       "restart_count": 0,
       "restarted_last_24h": true
@@ -172,8 +172,8 @@
     "bundles": 0
   },
   "facts_chain_head": {
-    "seq": 9,
-    "chain_hash": "6f3a6e54b78ab91f6308d1edab574f145995d9847b2b83a1378399b9f659a172"
+    "seq": 10,
+    "chain_hash": "362e8d4742bd55834c3347ee70493a18e0adad10e029e779c7d258eab36766da"
   },
   "incidents": "none recorded for this date (manual incident notes land in ops-canary/incidents/<date>.md; automated restart detection above is independent of this field)"
 }

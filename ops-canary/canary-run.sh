@@ -29,6 +29,14 @@ else
 fi
 TSA_TIME=$(openssl ts -reply -in "$DAY_DIR/statement.tsr" -text 2>/dev/null | grep 'Time stamp:' | sed 's/Time stamp: //')
 
+# Privacy gate (added after day-0's first publish briefly carried a real
+# hostname, caught and purged within minutes on 2026-09-03): nothing in this
+# repo may name the owner's real estate. Fails CLOSED before any git add.
+if grep -rInE '192\.168\.[0-9]+\.[0-9]+|10\.0\.[0-9]+\.[0-9]+|qcore-dev|access01|client0001|pve0[0-9]|moo@quox\.ai' "$DAY_DIR" chain.json 2>/dev/null; then
+  echo "canary FAIL: privacy gate matched real-estate patterns above — NOT publishing"
+  exit 1
+fi
+
 cd "$REPO_ROOT"
 git add "ops-canary/"
 if git diff --cached --quiet; then
