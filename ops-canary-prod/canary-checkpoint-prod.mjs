@@ -112,6 +112,21 @@ if (reachable.ok) {
   }, 'host')
 }
 
+// Org count: a live activity signal, and the prerequisite for the governed
+// self-workload (PROD-CORE P2/P4). Zero on 2026-09-03 is the honest state
+// of a production instance that has not yet been provisioned with a working
+// org; the number changing over time is exactly the trace the canary exists
+// to leave. Read over SSH so no prod secret transits the key-holding box.
+let orgs = { unavailable: true, reason: 'instance unreachable' }
+if (reachable.ok) {
+  orgs = tryRun(() => {
+    const out = sshRun('SK=$(docker exec quox-collector printenv INTERNAL_SERVICE_KEY); curl -s -m 15 "http://localhost:3101/api/internal/orgs/list" -H "X-Service-Key: $SK"')
+    const parsed = JSON.parse(out)
+    const list = Array.isArray(parsed) ? parsed : (parsed.orgs || parsed.data || [])
+    return { count: list.length }
+  }, 'orgs')
+}
+
 const incidentsFile = join(HERE, 'incidents', `${today}.md`)
 const incidents = existsSync(incidentsFile)
   ? readFileSync(incidentsFile, 'utf8').trim()
@@ -128,6 +143,7 @@ const checkpoint = {
   reachable: reachable.ok === true,
   collector,
   containers,
+  orgs,
   backup_freshness: backupFreshness,
   host,
   incidents,
