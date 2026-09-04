@@ -12,36 +12,43 @@
   },
   "containers": [
     {
+      "name": "quox-qlarity",
+      "status": "Up About an hour (healthy)",
+      "started_at": "2026-09-04T07:18:17.559455684Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
       "name": "quox-auth",
-      "status": "Up 14 hours (healthy)",
+      "status": "Up 17 hours (healthy)",
       "started_at": "2026-09-03T15:44:41.991815868Z",
       "restart_count": 0,
       "restarted_last_24h": true
     },
     {
       "name": "quox-dashboard",
-      "status": "Up 14 hours (healthy)",
+      "status": "Up 17 hours (healthy)",
       "started_at": "2026-09-03T15:27:45.507016713Z",
       "restart_count": 0,
       "restarted_last_24h": true
     },
     {
       "name": "quox-collector",
-      "status": "Up 20 hours (healthy)",
+      "status": "Up 23 hours (healthy)",
       "started_at": "2026-09-03T09:38:51.886634359Z",
       "restart_count": 0,
       "restarted_last_24h": true
     },
     {
       "name": "quox-tasks",
-      "status": "Up 22 hours (healthy)",
+      "status": "Up 25 hours (healthy)",
       "started_at": "2026-09-03T07:35:56.123377928Z",
       "restart_count": 0,
-      "restarted_last_24h": true
+      "restarted_last_24h": false
     },
     {
       "name": "quox-quoxflow",
-      "status": "Up 26 hours (healthy)",
+      "status": "Up 29 hours (healthy)",
       "started_at": "2026-09-03T03:29:33.096404907Z",
       "restart_count": 0,
       "restarted_last_24h": false
@@ -55,15 +62,8 @@
     },
     {
       "name": "quox-brain",
-      "status": "Up 35 hours (healthy)",
+      "status": "Up 38 hours (healthy)",
       "started_at": "2026-09-02T18:37:37.800448127Z",
-      "restart_count": 0,
-      "restarted_last_24h": false
-    },
-    {
-      "name": "quox-qlarity",
-      "status": "Up 4 days (healthy)",
-      "started_at": "2026-08-31T00:22:52.185548055Z",
       "restart_count": 0,
       "restarted_last_24h": false
     },
@@ -125,7 +125,7 @@
     },
     {
       "name": "quox-matrix-telegram-bridge",
-      "status": "Up 3 minutes",
+      "status": "Up 3 hours",
       "started_at": "2026-09-04T05:27:26.078885647Z",
       "restart_count": 0,
       "restarted_last_24h": true
@@ -172,8 +172,8 @@
     "bundles": 0
   },
   "facts_chain_head": {
-    "seq": 11,
-    "chain_hash": "bd26996ae6f5693a83ed735c0728ee80a41c5a9e446ed1f418f328b41aaf4438"
+    "seq": 12,
+    "chain_hash": "b3ec52e6f26c57cdc070e3f98df5bbf6e9758e4e99b9d962302391fd8ff30467"
   },
   "incidents": "none recorded for this date (manual incident notes land in ops-canary/incidents/<date>.md; automated restart detection above is independent of this field)"
 }
