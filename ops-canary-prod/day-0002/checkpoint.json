@@ -1,0 +1,135 @@
+{
+  "canary_version": 1,
+  "chain_id": "ward:quox.ai/ops-canary-prod",
+  "day": 2,
+  "date": "2026-09-05",
+  "day_zero": "2026-09-03",
+  "instance": "Quox production instance prod-1 (the QuoxCORE deployment running Quox Ltd’s own production operations)",
+  "phase": "PROD-CORE P1: observation only; governed self-workload arrives in later phases and each addition will be visible in this history",
+  "reachable": true,
+  "collector": {
+    "healthy": true,
+    "version": "4.2.0",
+    "uptime_seconds": 85058
+  },
+  "containers": [
+    {
+      "name": "quox-auth",
+      "status": "Up 12 hours (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-04T17:17:37.405480558Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-collector",
+      "status": "Up 24 hours (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-04T05:58:15.710595427Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-dashboard",
+      "status": "Up 24 hours (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-04T05:58:12.731432744Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-tasks",
+      "status": "Up 24 hours (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-04T05:58:11.986310474Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-memory",
+      "status": "Up 24 hours (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-04T05:58:11.365064952Z",
+      "restart_count": 0,
+      "restarted_last_24h": true
+    },
+    {
+      "name": "quox-quoxflow",
+      "status": "Up 2 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-09-03T02:11:06.304005157Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-qdrant",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.391218471Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-synapse",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.395013063Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-appservice",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.386622952Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-matrix-postgres",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.382665323Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-postgres",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.394937164Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-orchestrator",
+      "status": "Up 8 days (unhealthy)",
+      "health": "unhealthy",
+      "started_at": "2026-08-27T11:24:13.391916827Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    },
+    {
+      "name": "quox-files",
+      "status": "Up 8 days (healthy)",
+      "health": "healthy",
+      "started_at": "2026-08-27T11:24:13.394872083Z",
+      "restart_count": 0,
+      "restarted_last_24h": false
+    }
+  ],
+  "orgs": {
+    "count": 0
+  },
+  "backup_freshness": {
+    "newest_backup_age_hours": 52,
+    "recurring_schedule": false,
+    "note": "one-off pre-deploy snapshots only; recurring schedule is PROD-CORE P3"
+  },
+  "host": {
+    "disk_used": "74%",
+    "load_avg": "0.15 0.09 0.02",
+    "uptime_days": 9
+  },
+  "incidents": "none recorded for this date (manual notes land in ops-canary-prod/incidents/<date>.md)"
+}
