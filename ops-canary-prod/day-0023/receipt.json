@@ -1,0 +1,30 @@
+{
+  "receipt_version": 1,
+  "subject": "ops-canary-prod day 23 (2026-09-26)",
+  "checkpoint_sha256": "007b55b1f486d4ce25d9805fe781e864e867edfc26ab8684ed0dffbfe847a73e",
+  "ward_entry": {
+    "ward_version": "0.2",
+    "ward_entry_id": "ce783269-2ecf-4a43-ab37-624231076b96",
+    "chain_id": "ward:quox.ai/ops-canary-prod",
+    "seq": 24,
+    "witnessed_at": "2026-09-26T05:35:44.799Z",
+    "source_kind": "EXTERNAL",
+    "source_id": "ward:quox.ai/ops-canary-prod#day-23#sha256:007b55b1f486d4ce25d9805fe781e864e867edfc26ab8684ed0dffbfe847a73e",
+    "payload_hash": "007b55b1f486d4ce25d9805fe781e864e867edfc26ab8684ed0dffbfe847a73e",
+    "prev_chain_hash": "54d9ab4e6749de02f3a7ca617cb2151db2e503f7979f178dadc5037d3d84a309",
+    "chain_hash": "79d836e63378439053f073838aa5be6049dc095637ce383913c11ffdc82e81b6",
+    "issuer_id": "quox.ai#dev-signer"
+  },
+  "ward_tip": {
+    "tip_id": "ebdf4259-a9e3-4cc8-b0b2-a06fa4ff887f",
+    "chain_id": "ward:quox.ai/ops-canary-prod",
+    "tip_seq": 24,
+    "tip_chain_hash": "79d836e63378439053f073838aa5be6049dc095637ce383913c11ffdc82e81b6",
+    "entry_count": 24,
+    "created_at": "2026-09-26T05:35:44.816Z",
+    "sig": "dkqvbriIYeOrfZ+mKWJAN5nTxJOX+s6+U1Q6VxMGHKkkOQpNMa46gD5qUJa27+vF2E9XJWN7M1IUSZzLl4GUBA==",
+    "key_id": "f31d515099361405"
+  },
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA8x1RUJk2FAWNg9g29Hy9w4n4I0fugmUoZEbguQpf9Xs=\n-----END PUBLIC KEY-----\n",
+  "note": "Same Ed25519 key as the quox.ai/facts chain: publicly pinned in every facts.receipt.json and in this repo since seq 1, before either canary began."
+}
