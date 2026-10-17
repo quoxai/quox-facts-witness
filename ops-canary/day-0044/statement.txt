@@ -1,0 +1,1 @@
+ward:quox.ai/ops-canary day=44 seq=47 chain_hash=4bb06f5194f62362eb8d100ccdc85f1cc054de39f5a431f0b1941207798fd54e checkpoint_sha256=eb864f5fef6d491ac8ebfd7d5a4ab3f456bf23e85a6bb17dabc040392e43814a
