@@ -1,0 +1,1 @@
+ward:quox.ai/ops-canary-prod day=48 seq=49 chain_hash=797ee155354d35b6b3f4d390d986991f7a46007f8454bfa4c4b95adb8280aa21 checkpoint_sha256=7f06c36b0b59d37067eb0fb0cf6d5b1d69ecf2756db7639c3f2867358fe38f7c
