@@ -43,6 +43,8 @@ if git diff --cached --quiet; then
   echo "canary-prod: nothing new to publish"
 else
   git -c user.email=control@door.black -c user.name=Control commit -q -m "ops-canary $DAY_DIR (RFC-3161 $TSA_TIME)"
-  git push -q origin HEAD:main
-  echo "canary-prod: $DAY_DIR published (TSA $TSA_TIME)"
+  echo "canary-prod: $DAY_DIR committed (TSA $TSA_TIME)"
 fi
+# Always push, so commits a previous failed run left behind go out too.
+"$REPO_ROOT/push-witness.sh" "ops-canary-prod $DAY_DIR" || exit 1
+echo "canary-prod: $DAY_DIR published"
