@@ -741,6 +741,19 @@
       "prev_chain_hash": "4455784a7f46453fad8209942d0f44df612ed2a70079cdcf7d24d3f5df57ba97",
       "chain_hash": "cf979cf12711de47437b0e3c7fc0763738eef04874dcbd7d617c8ebebad6d964",
       "issuer_id": "quox.ai#dev-signer"
+    },
+    {
+      "ward_version": "0.2",
+      "ward_entry_id": "54bcb366-faf7-4d9e-ad99-160da79c29d1",
+      "chain_id": "ward:quox.ai/ops-canary",
+      "seq": 58,
+      "witnessed_at": "2026-10-28T05:30:07.079Z",
+      "source_kind": "EXTERNAL",
+      "source_id": "ward:quox.ai/ops-canary#day-55#sha256:3d8012ad2bac42a1705159a1976dbc53e6ad4824a13da5e0e722ae3973231abe",
+      "payload_hash": "3d8012ad2bac42a1705159a1976dbc53e6ad4824a13da5e0e722ae3973231abe",
+      "prev_chain_hash": "cf979cf12711de47437b0e3c7fc0763738eef04874dcbd7d617c8ebebad6d964",
+      "chain_hash": "b8d03d3e8374465491903b62e7c11a3b7a013041664ad06713b8a3c51e389911",
+      "issuer_id": "quox.ai#dev-signer"
     }
   ],
   "tips": [
@@ -1312,6 +1325,16 @@
       "entry_count": 57,
       "created_at": "2026-10-27T05:30:04.750Z",
       "sig": "vS6hs2uky8oL7g4FiBTUL0Bv3YKEpNjrA08rDWth1nt5EF75bzw29SH7Pd7Q4yW2kPz2S0iiHiqns0tVXQRCDg==",
+      "key_id": "f31d515099361405"
+    },
+    {
+      "tip_id": "ae8ee124-e106-4b12-a0bf-8b8ae246893a",
+      "chain_id": "ward:quox.ai/ops-canary",
+      "tip_seq": 58,
+      "tip_chain_hash": "b8d03d3e8374465491903b62e7c11a3b7a013041664ad06713b8a3c51e389911",
+      "entry_count": 58,
+      "created_at": "2026-10-28T05:30:07.113Z",
+      "sig": "JG8/8ChiD6aLrRdY8AK1buOdWEiaaGF/jeP8M1+jQapSrJ+lNP1Bc3+SLYSfZFpuoYUkl3InC8Fg9M0PZzaPDA==",
       "key_id": "f31d515099361405"
     }
   ]
