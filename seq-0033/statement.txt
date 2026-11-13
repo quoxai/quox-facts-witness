@@ -1,0 +1,1 @@
+ward:quox.ai/facts seq=33 chain_hash=8eb8eb3177a2397cd7b4a21c49660ae77b2fe24e7ceaf956e92f81626e3d23ff facts_sha256=a7e3d2962b462dd6cfdea576f0571a61e80ccfcb845ac423b37bcc2d32b23ab8
